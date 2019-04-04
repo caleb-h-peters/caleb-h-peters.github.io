@@ -1,0 +1,84 @@
+nav {
+  position: fixed;
+  height: 100%;
+  width: 60%;
+}
+
+nav::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+nav > ul {
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav > ul > li {
+  display: block;
+  padding-left: 10%;
+}
+
+.hamburger {
+  left: 1rem;
+  top: 1rem;
+  width: 1.5rem;
+  height: .7rem;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger > span {
+  display: block;
+  background-color: #262626;
+  height: 20%;
+  margin-bottom: 20%;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #262626;
+  overflow: auto;
+  transition: .2s ease;
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    padding: 4rem 1rem;
+  }
+}
+
+.container a {
+  color: #00c7be;
+}
+
+.container > p {
+  padding-bottom: 1em;
+}
+
+.container > h4 {
+  margin: 1em 0;
+}
+
+@media screen and (orientation: portrait) {
+  nav.active + .container {
+    transform: translateX(70%) scale(0.8);
+    box-shadow: 0 0 30px 5px rgba(38, 38, 38, 0.3);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  nav.active + .container {
+    transform: translateX(25%) scale(0.8);
+    box-shadow: 0 0 30px 5px rgba(38, 38, 38, 0.3);
+  }
+}
