@@ -1,0 +1,32 @@
+{
+  "name": "caleb-h-peters.github.io",
+  "version": "1.0.0",
+  "description": "Empty project.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.12"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "snowpack": "^3.8.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caleb-h-peters/caleb-h-peters.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caleb-h-peters/caleb-h-peters.github.io/issues"
+  },
+  "homepage": "https://github.com/caleb-h-peters/caleb-h-peters.github.io#readme"
+}
